@@ -90,3 +90,15 @@ body {
         left: 0px;
         transform-origin: center 60px;
 }
+.second__arrow {
+            position: absolute;
+            width: 1px;
+            height: 120px;
+            background: rgb(255, 0, 0);
+            border-top-left-radius: 100%;
+            border-top-right-radius: 100%;
+            bottom: -30px;
+            right: 0px;
+            transform-origin: center 90px;
+            /* z-index: 5; */
+}
