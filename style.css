@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #e8e8e8;
+}
+.clock__border {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #000;
+    border-radius: 50%;
+    background: url("1639326639_1-papik-pro-p-tsiferblat-klipart-1.png"), #fff;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px 0 #555555,inset 3px 3px 10px 0 #555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.clock__border::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(to bottom, #ffffff 40%, transparent);
+    opacity: 0.3;
+    z-index: 3;
+    transform: rotate(135deg);
+}
+.center {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #000;
+}
+
+.minute__arrow {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background: #000;
+    bottom: -20px;
+    left: 0px;
+    transform-origin: 50% 80px;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hour__arrow {
+        position: absolute;
+        width: 5px;
+        height: 80px;
+        background: #000;
+        bottom: -20px;
+        left: 0px;
+        transform-origin: 50% 60px;
+}
